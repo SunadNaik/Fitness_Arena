@@ -1,0 +1,903 @@
+#app { height: 100% }
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  overflow-x:hidden;
+}
+
+body {
+  background: #000000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  width: 100vw;
+}
+
+/* .app{
+  position: relative;
+} */
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+}
+.topnav{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .2px solid rgb(113, 113, 113);
+  color: #fff;
+  background: transparent;
+  background-color: #020703;
+  transition: 0.2s;
+  width: 100vw;
+}
+li.lastli{
+  margin-right: 0px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 10rem;
+}
+ul li{
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+.nav nav.bg-dark{
+  background-color: #000000;
+}
+.bottomnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background: #0e8ba1;
+  color: #08080d;
+  
+}
+.bottomnav .left .logo{
+  font-size: 2rem;
+}
+.bottomnav .right ul{
+  padding: 0;
+  display: inline;
+}
+.bottomnav .right ul li{
+  margin-right: 4rem;
+}
+.blacknav
+{
+  background-color: #000;
+}
+.lightnav{
+  background-color: #fff;
+  color: #000;
+}
+.btn-primary{
+  padding: 1.8rem 3.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(0, 206, 155);
+  border: none;
+}
+
+
+.mainSection{
+  background-color: #000000;
+ 
+}
+.swiper {
+  width: 100%;
+
+  height: 100%;
+ 
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tr{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #3a1777;
+  
+}
+.heading{
+  font-size: 5rem;
+  color: #e5eae4;
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8rem 6rem;
+  padding-top: 12rem;
+  margin-top: 18rem;
+}
+.headin{
+  font-size: 5rem;
+  color: #6a0b55;
+  width: 100%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8rem 6rem;
+  padding-top: 12rem;
+  margin-top: 18rem;
+  
+}
+.swiper-slide .section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  flex-direction: column;
+  background-size: cover;
+  padding: 5rem 0px;
+  padding-bottom: 0%;
+}
+
+  
+.swiper-slide .section1{
+  background-image: url("../public/main.jpg");
+}
+.swiper-slide .section2{
+  background-image: url("../public/main9.jpeg");
+  margin-top: 2rem;
+}
+.swiper-slide div button
+{
+  margin-left: 10rem;
+  font-size: 1.8rem;
+}
+.whychooseus{
+  position: relative;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.form{
+    height: 60rem;
+    position: absolute;
+    width: 85vw;
+    top: -1%; 
+    margin:0px 8.5vw;
+    z-index: 10;
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 8px 36px -6px rgb(156, 9, 9);
+   
+}
+.form .left{
+  width: 50%;
+  padding: 5rem;
+}
+.form h1{
+  font-size: 3.5rem;
+  color: #000;
+  padding:0;
+  margin: 0%;
+  width: 100%;
+}
+.form p{
+  font-size: 1.8rem;
+}
+.form form{
+  display: flex;
+  flex-direction: column;
+}
+.form form input{
+  margin:1rem 0px;
+  padding: 1.5rem 2rem;
+  background-color: rgba(148, 148, 148, 0.333);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: .2s;
+}
+.form form input:focus{
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+.form form button{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.form .right{
+  width: 50%;
+  background-image: url("../public/img1.jpg");
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.whychooseus .bottom{
+  height: 50%;
+  justify-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+}
+/* .whychooseus .bottom .left{
+  width: 60vw;
+} */
+.whychooseus .bottom h1{
+  font-size: 3rem;
+  color: #000;
+  
+}
+/* .whychooseus .bottom .features{
+    display: flex;
+    width: 750%;
+    justify-content:flex-start;
+    padding:0px 1rem;
+} */
+/* .whychooseus .bottom .features ul{
+  padding: 0%;
+  
+} */
+/* .whychooseus .bottom .features ul li{
+  font-weight:400px;
+  font-size: 1.3rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  color: rgb(154, 154, 154);
+} */
+ul li::before {
+  content: attr(data-icon);
+  font-size: 1.5rem;
+}
+.whychooseus .bottom .right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.whychooseus .bottom .right .box{
+    height: 20rem;
+    width: 20rem;
+    padding: 2rem;
+    margin: 0px 1rem;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.whychooseus .bottom .right .box:hover{
+  background-image: linear-gradient(45deg,rgb(0, 206, 155),rgb(81, 81, 81));
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0px 8px 8px #7c7c7c;
+}
+
+.whychooseus .bottom .right .box h2{
+  font-size: 2rem;
+}
+.whychooseus .bottom .right .box p{
+  font-size: 1.4rem;
+  color: grey;
+}
+.whychooseus .bottom .right .box:hover{
+  background-image: linear-gradient(45deg,rgb(0, 206, 155),rgb(0, 135, 207));
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0px 2px 8px #7c7c7c;
+  color: #fff;
+}.whychooseus .bottom .right .box:hover p{
+  color: #fff;
+}
+
+.training {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+}
+.training h1{
+  color: #760808;
+  font-size: 4.2rem;
+  text-align: center;
+  width: 90vw;
+  padding: 0;
+  margin: 3rem auto;
+}
+.training .trainingsubtitle{
+  font-size: 1.8rem;
+  text-align: center;
+  color: #7c7c7c;
+  width: 50vw;
+  display: block;
+  margin: 3rem auto;
+  margin-bottom: 6rem;
+
+}
+.training .swiper,.schedule .swiper{
+  width: 85vw;
+}
+.training .swiper div,.schedule .swiper div{
+  border-radius: 10px;
+}
+.card{
+  background-image: linear-gradient(45deg,rgb(0, 206, 155),rgb(43, 243, 50)) ;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+  padding: 0px 2rem;
+}
+
+.card .card-body{
+  width: fit-content;
+  
+}
+.card img{
+  width: 90%;
+  display: block;
+  height: 25rem;
+  border-radius: 10px;
+}
+.card h5{
+  font-size: 2rem;
+}
+.card p{
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color:rgb(243, 233, 233);
+}
+div.trainingbottom{
+  padding: 3rem 0px;
+  width: 50vw;
+  color: #7c7c7c;
+  overflow: hidden;
+  margin:0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.trainingbottom h1{
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 0;
+  color: #0e8ba1;
+  width: 50vw;
+}
+div.trainingbottom p{
+  font-size: 2rem;
+}
+
+
+
+
+/* 
+=============================================
+SCHEDULE 
+==============================================
+*/
+.schedule{
+  height: auto;
+  background-color: #000000;
+  position: relative;
+}
+.schedule .parallex{
+  background-image: linear-gradient(0deg,#0005,#0007),url("../public/m.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  height: 40rem;
+  width: 90vw;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.schedule .parallex h3{
+  font-size: 3rem;
+  color: #fff;
+}
+.schedule .timings{
+  font-size: 2rem;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  background-color: #000000;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.schedule .timings table{
+  margin: -3% 0px;
+  border-collapse: collapse;
+  width: 80vw;
+  border-radius: 20px;
+  box-shadow: 0 8px 10px -6px grey;
+}
+.schedule .timings table th{
+  background-color: rgb(0, 206, 155);;
+  color: #040404;
+}
+.schedule .timings table th,td{
+  padding: 1.2vw 2.4vw;
+  text-align: center;
+  border: 0.2px solid rgb(177, 177, 177);
+  border-collapse: collapse;
+}
+.schedule .timings table td{
+  background-color: rgb(228, 228, 228);
+}
+
+
+.schedule .timings .personaltrainers h1{
+  margin-top: 8rem;
+  font-size: 3.4rem;
+  text-align: center;
+}
+.schedule .timings .personaltrainers p{
+  font-size: 2rem;
+  text-align: center;
+  color: grey;
+  margin-bottom: 8rem;
+}
+
+.schedule .card{
+  height: fit-content;
+  background-color: #fff;
+  padding: 4rem 4rem;
+  text-align: left;
+  box-shadow: 0 8px 10px -6px grey;
+}
+.schedule .card img{
+  margin-top: 1rem;
+  object-fit: contain;
+}
+.schedule .personaltrainers .card .card-title{
+  margin-bottom: 0;
+}
+.schedule .card h3{
+  color: rgb(24, 4, 83);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.schedule .personaltrainers .card p{
+  text-align: left;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #cd286a;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+div.social {
+  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+
+}
+.social ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+.social ul li{
+  background-color:rgb(0, 206, 155);
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+} 
+
+
+/* ================================
+Pricing
+=================================
+ */
+.pricing {
+  background-color:rgb(4, 7, 6);
+  margin-top: 120rem;
+  display: block;
+}
+ .pricing .parallex2
+ {
+   height: 60rem;
+   background-image: url("../public/men.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+    margin: 0px 10vw;
+ }
+ .pricing .parallex2 h1{
+   color: #972264;
+   font-family:fantasy;
+   margin: 0;
+   margin-bottom: 1.2rem;
+   font-size: 5rem;
+ }
+ .pricing .parallex2 p{
+   font-size: 4rem;
+   color: rgb(193, 228, 17);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+ 
+ }
+ .pricing .pricingcontainer{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+ /* h1.heading1{
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.2rem;
+ } */
+ p.para1{
+   font-size: 2rem;
+   text-align: center;
+   color: #7c7c7c;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 2rem;
+ }
+ .pricing .pricingcontainer .prices{
+   display: flex;
+   padding-bottom: 2rem;
+   
+ }
+ .pricing .pricingcontainer .prices .box{
+   width: 20vw;
+   margin: 0px 2rem;
+   padding: 0px 3rem;
+ }
+ .pricing .pricingcontainer .prices .box h3{
+    font-size: 2.6rem;
+    font-weight: 400;
+ }
+ .pricing .pricingcontainer .prices .box i{
+    font-size: 3rem;
+ }
+ .pricing .pricingcontainer .prices .box h2{
+   font-size: 4rem;
+   font-weight: 400;
+   color: rgb(0, 206, 155);
+   margin: 2rem 0;
+ }
+ .pricing .pricingcontainer .prices .box h4{
+   font-size: 1.6rem;
+   color: #7c7c7c;
+   font-weight: 400;
+   margin: 0;
+    margin: 2rem 0;
+  }
+ .pricing .pricingcontainer .pricing .box{
+   padding: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ div.top{
+   border-bottom: 1px solid  grey;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+ div.bottom .item{
+   display: flex;
+   justify-content: space-between;
+ }
+ div.box2{
+   box-shadow: 0px 6px 20px grey;
+   border-top: 2px solid rgb(0, 206, 155);
+   border-radius: 10px;
+   z-index: -1;
+ }
+ .pricing .pricingcontainer .prices .box .bottom h4.tick {
+   color: rgb(0, 206, 155);
+ }
+ .btn-outline{
+   font-size: 1.7rem;
+   display: block;
+   margin: 2rem auto;
+   border: 4px solid rgb(0, 206, 155);
+   padding: 1.6rem 2.5rem;
+   border-radius: 10px;
+ }
+  .pricing .btn-primary{
+  font-size: 1.7rem;
+  display: block;
+  margin: 2rem auto;
+  border: 4px solid rgb(0, 206, 155);
+  padding: 1.6rem 2.5rem;
+  border-radius: 10px;
+ color: #000;
+}
+
+
+/* ==========================================
+map
+=========================================== */
+.map{
+  background-color: #518eb4;
+
+}
+.map .contact
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10vw;
+}
+.map .contact .left{
+  width: 50%;
+  
+}
+.map .contact .right{
+  width: 50%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+}
+.map .contact button{
+ margin: 0;
+ justify-self: flex-start;
+ align-self: flex-start;
+ color:#fff ;
+
+}
+.map .contact .right form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.map .contact .right form input,.map .contact .right form textarea{
+  margin: 2rem 0px;
+  width: 30vw;  
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  background-color: #eee;
+  border: none;
+  font-size: 1.4rem;
+}
+.map .contact .right form button{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.map .contact .right form input:focus,.map .contact .right form textarea:focus
+{
+    outline: 1px solid#000;
+    background: #fff;
+}
+.map .contact .left iframe{
+  
+  height: 50rem;
+  width: 100%;
+  background: #0005;
+  border: none;
+}
+.map button{
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 3rem;
+}
+
+
+/* =======================================
+footer
+======================================== */
+
+
+.footer{
+  background-color: #000;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex; 
+  justify-content: center;
+  padding: 5rem 0px;
+}
+.footer h4{
+  color: rgb(0, 206, 155);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  
+}
+.footer div{
+  width: 20vw;
+}
+.footer ul{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer ul li{
+  
+  text-transform: uppercase;
+  margin: 1.3rem 0px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.footer p{
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+
+/* ===========================
+Responsive
+=========================== */
+
+@media screen and (max-width:998px) {
+  html{
+    font-size: 55%;
+  }
+  .topnav {
+    display: none;
+  }
+  .schedule .parallex, .pricing .parallex2
+  {
+    background-size: cover;
+  }
+}
+@media screen and (max-width:768px) {
+    html{
+      font-size: 40%;
+    }
+    .bottomnav{
+      background-color: #fff;
+      color: #000;
+    }
+    .swiper-slide .section{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      height: 90vh;
+      padding: 0px 2rem;
+      background-size:cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    .swiper-slide .section h1{
+      padding: 0;
+      font-weight: 400;
+      text-align: left;
+      font-size: 6rem;
+      
+    }
+    .swiper-slide .section button{
+      margin: 0;
+      align-self:center;
+      padding: 2rem 10rem;
+      font-size: 3rem;
+      
+    }
+    .whychooseus{
+      height: 140vh;
+    }
+    .form{
+      top: 0;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      padding: 0;
+     
+    }
+    .form .left{
+      padding: 5rem 0;
+      overflow: hidden;
+      width: 80%;
+    }
+    .whychooseus .bottom{
+     
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .whychooseus .bottom .features{
+      padding: 0;  
+    } 
+    .whychooseus .bottom .heading1{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      
+      text-align: center;
+    }
+    .whychooseus .bottom .features{
+      width: 100%;
+    }
+    .whychooseus .bottom .right{
+      grid-template-columns:min-content;
+      width: 100%;
+    }
+   .bottom .right .box{
+      width: 100%;
+      margin: 10px auto;
+      background-image: linear-gradient(45deg,rgb(0, 206, 155),rgb(43, 243, 50)) ;
+      color: #fff;
+    }
+  .bottom .right .box p{
+      color: #fff;
+    }
+    div.trainingbottom {
+      padding: 0;
+      margin: 0;
+      margin:  0 auto;
+    }
+    div.trainingbottom p{
+      text-align: center;
+    }
+    .schedule .parallex, .pricing .parallex2
+    {
+      background-size: cover;
+    }
+    .prices{
+      flex-direction: column;
+    }
+    .pricing .pricingcontainer .prices .box{
+      width: 70vw;
+        margin-top: 2.2rem;
+        box-shadow: 0px 6px 20px grey;
+        border-top: 2px solid rgb(0, 206, 155);
+        border-radius: 10px;
+      
+    }
+    .map .contact
+    {
+      flex-direction: column;
+    }
+    .map .contact .left ,.map .contact .right{
+      width: 80vw;
+    }
+    .map form {
+        width: 80vw;
+    }
+    .map .contact .right form input,.map .contact .right form textarea{
+      width: 90%;
+    }
+    .map .contact .right button{
+      margin: 0px auto;
+    }
+    .map{
+      padding-bottom: 2rem;
+    }
+    .footer{
+      flex-direction: column;
+    }
+    .footer div{
+      align-self: flex-start;
+      width: 50vw;
+      margin-left: 2rem;
+    }
+}
